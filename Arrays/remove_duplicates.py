@@ -8,7 +8,8 @@ def brute_force_solve(nums):
         l = len(nums)
         for x in range(1, l):
             if nums[x-1] != nums[x]:
-                res += 1
+                 nums[res] = nums[x]
+                 res += 1
         return res 
         
     
