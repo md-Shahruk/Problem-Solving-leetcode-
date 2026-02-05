@@ -14,6 +14,7 @@ def linkedlist(values, pos):
         nodes[-1].next = nodes[pos]
     return nodes[0]
 
+# Time: O(n) Space: O(1) for slow , fast constant
 def hasCycle(nodes):
     s= f = nodes
     while f and f.next:
